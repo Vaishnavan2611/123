@@ -1,0 +1,148 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Apply a background color and text styles */
+body {
+  background-color: #ccdefa;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+/* Style the heading */
+h1 {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+/* Style the container for currency inputs */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+/* Style currency select and input elements */
+.currency {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  background-color: #3179ff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+select,
+input {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+/* Style the swap button and rate display */
+.swap-rate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.neon-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 20px;
+  background-color: #00ffff;
+  text-decoration: none;
+  animation: neon-loader 1s infinite alternate;
+}
+
+.neon-loader:hover{
+  background-color: #00ffff !important;
+  animation-play-state: paused;
+  box-shadow: 0 0 10px #00ffff,
+              0 0 30px #00ffff,
+              0 0 60px #00ffff;
+}
+
+span{
+  font-size: 2em;
+  color: #000;
+}
+
+@keyframes neon-loader {
+  from {
+    background-color: #00ffff;
+  }
+  to {
+    background-color: #ff00ff;
+  }
+}
+
+.rate {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .currency {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+
+
+.btn:hover {
+  background-color: #173b61;
+}
+
+.rate {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .currency {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+h3{
+  color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-underline-position: auto;
+}
